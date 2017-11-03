@@ -42,8 +42,9 @@ public class Cubico extends Tanque implements Serializable {
      */
     public void setMetros3(){
         
-        capacidad = (Math.PI)*Math.pow((ancho/2),2)*largo;
+        capacidad = profundo*ancho*largo;
         metros3 = capacidad;
+    }
     @Override
     public int hashCode() {
         int hash = 0;
